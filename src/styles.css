@@ -1,0 +1,92 @@
+body {
+    background-color: #343a40; /* Color de fondo por defecto (oscuro) */
+    color: #fff; /* Color de texto por defecto (blanco) */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de tema */
+    margin-bottom: 60px; /* Ajuste para el botón de alternancia */
+    position: relative; /* Establecer posición relativa para el body */
+}
+.container {
+    background-color: #212529; /* Color de fondo para el contenedor */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+    margin-top: 50px; /* Margen superior */
+    transition: background-color 0.3s; /* Transición suave para cambios de tema */
+}
+.form-group label {
+    color: #ccc; /* Color de etiquetas por defecto (oscuro) */
+    transition: color 0.3s; /* Transición suave para cambios de color de texto */
+}
+.form-control {
+    background-color: #343a40; /* Color de fondo para campos de entrada por defecto (oscuro) */
+    color: #fff; /* Color de texto por defecto (blanco) */
+    border: 1px solid #6c757d; /* Borde gris oscuro */
+}
+.form-control:focus {
+    background-color: #495057; /* Color de fondo al estar enfocado */
+    color: #fff; /* Color de texto */
+    border-color: #6c757d; /* Borde gris oscuro */
+    box-shadow: none; /* Sin sombra */
+}
+.btn-primary {
+    background-color: #28a745; /* Color de fondo verde para opciones avanzadas */
+    border-color: #28a745; /* Borde verde para opciones avanzadas */
+}
+.btn-primary.active {
+    background-color: #dc3545; /* Color de fondo rojo cuando está activo */
+    border-color: #dc3545; /* Borde rojo cuando está activo */
+}
+.btn-primary:focus {
+    box-shadow: none; /* Sin sombra al enfocar */
+}
+.btn-success {
+    background-color: #28a745; /* Color de fondo verde de éxito */
+    border-color: #28a745; /* Borde verde de éxito */
+}
+.btn-success:hover {
+    background-color: #218838; /* Color de fondo al pasar el mouse */
+    border-color: #1e7e34; /* Borde al pasar el mouse */
+}
+#output {
+    background-color: #495057; /* Color de fondo para la salida */
+    color: #fff; /* Color de texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    max-height: 120px; /* Altura máxima */
+    overflow-y: auto; /* Barra de desplazamiento vertical automática */
+    white-space: pre-wrap; /* Manejo de espacios en blanco */
+    margin-bottom: 0; /* Eliminar margen inferior */
+}
+.theme-toggle {
+    position: absolute; /* Posición absoluta para que se mantenga en la esquina */
+    top: 20px; /* Distancia desde el borde superior */
+    right: 20px; /* Distancia desde el borde derecho */
+    z-index: 1000; /* Z-index para asegurar que esté por encima de otros elementos */
+}
+.theme-toggle button {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+/* Estilos para tema claro */
+.theme-light body {
+    background-color: #fff; /* Color de fondo claro */
+    color: #343a40; /* Color de texto oscuro */
+}
+.theme-light .container {
+    background-color: #f8f9fa; /* Color de fondo para el contenedor */
+}
+.theme-light .form-group label {
+    color: #6c757d; /* Color de etiquetas en tema claro */
+}
+.theme-light .form-control {
+    background-color: #f8f9fa; /* Color de fondo para campos de entrada en tema claro */
+    color: #495057; /* Color de texto en tema claro */
+}
+.option-group {
+    display: none; /* Ocultar por defecto */
+}
+.option-group.active {
+    display: block; /* Mostrar cuando esté activo */
+}

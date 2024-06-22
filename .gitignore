@@ -1,0 +1,27 @@
+# Node.js dependencies
+node_modules/
+
+# Built files
+build/
+dist/
+
+# Logs
+*.log
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+#zip
+versio 1.01.zip
+version buena.zip

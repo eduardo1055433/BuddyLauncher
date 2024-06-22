@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>BuddyLauncher</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="theme-light">
+    <div class="container">
+        <h1 style="color: #000;">BuddyLauncher</h1> 
+        <br>
+        <form id="launchForm">
+            <div class="form-group" id="usernameGroup">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" required pattern="[A-Za-z0-9]+">
+                <small id="usernameError" class="form-text text-muted">Solo Números y Letras</small>
+            </div>
+
+            <div class="form-group" id="versionGroup">
+                <label for="version">Version:</label>
+                <input type="text" class="form-control" id="version" value="1.14" required>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-options">Advanced Options</button>
+
+            <div class="option-group" id="rootGroup">
+                <div class="form-group">
+                    <label for="root">Root Directory:</label>
+                    <input type="text" class="form-control" id="root" value="./minecraft">
+                </div>
+            </div>
+
+            <div class="option-group" id="typeGroup">
+                <div class="form-group">
+                    <label for="type">Version Type:</label>
+                    <input type="text" class="form-control" id="type" value="release">
+                </div>
+            </div>
+
+            <div class="option-group" id="memoryMaxGroup">
+                <div class="form-group">
+                    <label for="memoryMax">Memory Max:</label>
+                    <input type="text" class="form-control" id="memoryMax" value="6G">
+                </div>
+            </div>
+
+            <div class="option-group" id="memoryMinGroup">
+                <div class="form-group">
+                    <label for="memoryMin">Memory Min:</label>
+                    <input type="text" class="form-control" id="memoryMin" value="4G">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Launch Minecraft</button>
+        </form>
+
+        <div class="progress mt-3">
+            <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        </div>
+
+        <pre id="output"></pre>
+    </div>
+
+    <div class="theme-toggle">
+        <button id="themeToggleBtn">
+            <img id="themeIcon" src="./img/sun-icon.png" alt="Sun Icon">
+        </button>
+    </div>
+
+
+    <script src="renderer.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

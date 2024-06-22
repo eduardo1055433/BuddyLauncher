@@ -1,0 +1,8 @@
+{
+  "username": "eduardo",
+  "root": "./minecraft",
+  "version": "1.14",
+  "type": "release",
+  "memoryMax": "6G",
+  "memoryMin": "4G"
+}
