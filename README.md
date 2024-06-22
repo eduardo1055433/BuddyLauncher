@@ -1,37 +1,23 @@
-BuddyLauncher
-BuddyLauncher es una aplicación basada en Electron para lanzar Minecraft con opciones avanzadas de configuración.
+# BuddyLauncher
+BuddyLauncher es una aplicación desarrollada con Electron que te permite lanzar Minecraft con opciones avanzadas configurables. Utiliza minecraft-launcher-core, una biblioteca NodeJS, para gestionar el lanzamiento de Minecraft, ya sea en versiones vanilla o modificadas.
 
-Instalación
-Para utilizar BuddyLauncher, sigue estos pasos:
+## Funcionamiento
 
-Clonar el repositorio:
-
-bash
-Copiar código
-git clone https://github.com/tu-usuario/buddy-launcher.git
-cd buddy-launcher
-Instalar dependencias:
-
-bash
-Copiar código
+1.Asegúrate de tener Node.js instalado. Para instalar las dependencias del proyecto, ejecuta:
+```bash
 npm install
-Uso
-Para ejecutar BuddyLauncher, ejecuta el siguiente comando:
+```
+2.Para iniciar BuddyLauncher, utiliza el siguiente comando:
+```bash
+npm run start
+```
+## Notas Adicionales
+Proyecto Basado en Electron
+Este proyecto utiliza Electron para construir aplicaciones de escritorio multiplataforma usando tecnologías web estándar como HTML, CSS y JavaScript.
 
-bash
-Copiar código
-npm start
-Esto abrirá la aplicación BuddyLauncher donde podrás configurar y lanzar Minecraft.
+Integración con minecraft-launcher-core
+minecraft-launcher-core maneja la configuración y lanzamiento de Minecraft desde la aplicación Electron, permitiendo personalización avanzada como la gestión de versiones, opciones de memoria y directorios.
 
-Capturas de Pantalla
+## License
 
-Características
-Configuración Avanzada: Personaliza la versión de Minecraft, directorio raíz, memoria asignada, etc.
-Tema Oscuro/Luz: Cambia entre temas oscuro y claro con un solo clic.
-Validación de Usuario: Asegura que el nombre de usuario ingresado solo contenga letras y números.
-
-Créditos
-BuddyLauncher utiliza la librería minecraft-launcher-core para manejar el lanzamiento de Minecraft.
-
-Licencia
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+[MIT](https://choosealicense.com/licenses/mit/)
